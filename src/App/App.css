@@ -307,6 +307,9 @@
 .pi1{
   padding-inline: 2rem;
 }
+.pi0{
+  padding-inline: 1rem;
+}
 
 /*Relative*/
 .relative{
@@ -401,6 +404,9 @@
 }
 .mgB1{
   margin-bottom: 1rem;
+}
+.mgI1{
+  margin-left: 1rem;
 }
 
 /*ButtonBox2*/
@@ -554,16 +560,16 @@
 }
 
 .bookButton:hover{
-  color: #FF2C38;
+  background-color: #FF2C38;
   border: 2px solid #FF2C38;
-  background-color:white;
+  color:white;
   
 
 }
 .bookButton:active{
-  color: #FF2C38;
+  background-color: #FF2C38;
   border: 2px solid #FF2C38;
-  background-color:white;
+  color:white;
   
 
 }
