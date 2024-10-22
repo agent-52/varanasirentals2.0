@@ -8,10 +8,10 @@ const routes = [
     element: <App />,
     errorElement: <ErrorPage />,
   },
-//   {
-//     path: "profile/:name",
-//     element: <Profile />,
-//   },
+  {
+    path: "/:name",
+    element: <App />,
+  },
 ];
 
 export default routes;
