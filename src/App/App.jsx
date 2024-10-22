@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../Header/Header'
 import { useParams } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import './App.css'
 import Button from '../Button/Button'
@@ -12,6 +13,10 @@ import tempofleet from "/images/carImages/carfleet3.png"
 import bus1 from "/images/carImages/bus2.png"
 
 function App() {
+  useEffect(() =>{
+
+
+  })
   const {name} = useParams();
   const [count, setCount] = useState(0)
 
@@ -28,7 +33,7 @@ function App() {
               <h3 className='text-medium1 maxW45ch'>From DZIRE  to MERCEDES, We got everything you may need in our extensive Fleet of cars</h3>
               <p className='text-sm1 maxW45ch'>With more than 100000+ Happy customers, We provide the  <strong> Best Car rental service in Varanasi</strong></p>
             </div>
-            <Link className="textDecNone"><Button text="Rent Now >" classArray='text-sm1 button2 font-light'/></Link>
+            <HashLink className="textDecNone"  smooth to="/#rentalPage"><Button text="Rent Now >" classArray='text-sm1 button2 font-light'/></HashLink>
           </div>
           <div className='p1Mi'><img src={carfleet} alt="cars fleet of varanasi rentals" /></div>
         </div>
@@ -65,7 +70,7 @@ function App() {
       <div><img src={buses} alt="image of buses at varanasi rentals" /></div>
       <div><img src={premium} alt="image of premium cars at varansi rentals" /></div>
     </nav> */}
-    <main className='fleetPage font-sans'>
+    <main className='fleetPage font-sans pb2' id="rentalPage">
       <div className='flexC gap2 alignC'>
         <div className="flexC gap1 alignC">
           <div className='rental text-sm font-medium1 noWrap'>RENTAL COLLECTION</div>
@@ -78,7 +83,7 @@ function App() {
           <Link className='textDecNone pointer' to="/premium"><button className='font-medium text-sm1'>PREMIUM</button></Link>
         </div>
         {name === "cars"?(
-          <div className='cardArray gap2 pi1'>
+          <div className='cardArray gap2 pi1' >
             <CarCard name='Dzire' airportRate="900" rate1="2000" rate2="2500" rate3="11" capacity="4 + 1" driverRate="300" rentName="Dzire" carImage="/images/carImages/swift2.webp" />
             <CarCard name='Fortuner' airportRate="5000" rate1="8000" rate2="10500" rate3="45" capacity="6 + 1" driverRate="400" rentName="Fortuner" carImage="/images/carImages/fortuner1.webp" />
             <CarCard name='Ertiga' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Ertiga" carImage="/images/carImages/ertiga1.webp" />
