@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 import './App.css'
 import Button from '../Button/Button'
-import {CarCard, TempoCard} from '../CarCard/CarCard'
+import {CarCard, TempoCard, PremiumCard} from '../CarCard/CarCard'
 
 import carfleet from "/images/carImages/carfleet1.png"
 import tempofleet from "/images/carImages/carfleet3.png"
@@ -59,10 +59,18 @@ function App() {
      </section>
      
     </div>
+    {/* <nav>
+      <div><img src={cars} alt="image of cars at varansi rentals" /></div>
+      <div><img src={tempos} alt="image of tempos at varanasi rentals" /></div>
+      <div><img src={buses} alt="image of buses at varanasi rentals" /></div>
+      <div><img src={premium} alt="image of premium cars at varansi rentals" /></div>
+    </nav> */}
     <main className='fleetPage font-sans'>
-      <div className='flexC gap1 alignC'>
-        <div className='rental text-sm font-medium1 noWrap'>RENTAL COLLECTION</div>
-        <h1 className='text-medium'>Our Fleet Collection</h1>
+      <div className='flexC gap2 alignC'>
+        <div className="flexC gap1 alignC">
+          <div className='rental text-sm font-medium1 noWrap'>RENTAL COLLECTION</div>
+          <h1 className='text-medium'>Our Fleet Collection</h1>
+        </div>
         <div className='buttonArray flex gap0'>
           <Link className='textDecNone pointer' to="/cars"><button className='font-medium text-sm1'>CARS</button></Link>
           <Link className='textDecNone pointer' to="/tempos"><button className='font-medium text-sm1'>TEMPOS</button></Link>
@@ -81,12 +89,12 @@ function App() {
           </div>
         ): name === "tempos" ?(
           <div className='cardArray gap2 pi1'>
-            <TempoCard name='Dzire' airportRate="900" rate1="2000"  rate3="11" capacity="4 + 1" driverRate="300" carImage="/images/carImages/swift2.webp" />
-            <TempoCard name='Fortuner' airportRate="5000" rate1="8000" r rate3="45" capacity="6 + 1" driverRate="400" carImage="/images/carImages/fortuner1.webp" />
-            <TempoCard name='Ertiga' airportRate="1150" rate1="2500"  rate3="14" capacity="6 + 1" driverRate="300" carImage="/images/carImages/ertiga1.webp" />
-            <TempoCard name='Hycross' airportRate="2200" rate1="4500"  rate3="22" capacity="6 + 1" driverRate="400" carImage="/images/carImages/hycross4.webp" />
-            <TempoCard name='Kia Carens' airportRate="1150" rate1="2500"  rate3="14" capacity="6 + 1" driverRate="300" carImage="/images/carImages/kia1.webp" />
-            <TempoCard name="Innova Crysta" airportRate="1500" rate1="3000"  rate3="18" capacity="6 + 1" driverRate="300" carImage="/images/carImages/crysta1.webp" />
+            <TempoCard name='Tempo Traveller' airportRate="2500" rate1="5500"  rate3="25" capacity="10 - 16" driverRate="500" image="/images/carImages/17seater.jpg" />
+            <TempoCard name='Tempo Traveller' airportRate="3000" rate1="6500" rate3="28" capacity="17 - 20" driverRate="500" image="/images/carImages/tempo1.png" />
+            <TempoCard name='Tempo Traveller' airportRate="1150" rate1="7500"  rate3="35" capacity="21 - 25" driverRate="500" image="/images/carImages/tempo4.png" />
+            <TempoCard name='Tempo Traveller Maharaja' airportRate="7500" rate1="4500"  rate3="28" capacity="9 - 14" driverRate="500" image="/images/carImages/tempo3.png" />
+            <TempoCard name='Urbania' airportRate="3000" rate1="6500"  rate3="30" capacity="9 - 16" driverRate="500" image="/images/carImages/urbania.jpg" />
+            
             
           </div>
         ): name === "buses" ?(
@@ -101,12 +109,12 @@ function App() {
             </div>
         ): name === "premium" ?(
             <div className='cardArray gap2 pi1'>
-              <CarCard name='Dzire' airportRate="900" rate1="2000" rate2="2500" rate3="11" capacity="4 + 1" driverRate="300" rentName="Dzire" carImage="/images/carImages/swift2.webp" />
-              <CarCard name='Fortuner' airportRate="5000" rate1="8000" rate2="10500" rate3="45" capacity="6 + 1" driverRate="400" rentName="Fortuner" carImage="/images/carImages/fortuner1.webp" />
-              <CarCard name='Ertiga' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Ertiga" carImage="/images/carImages/ertiga1.webp" />
-              <CarCard name='Hycross' airportRate="2200" rate1="4500" rate2="6000" rate3="22" capacity="6 + 1" driverRate="400" rentName="Hycross" carImage="/images/carImages/hycross4.webp" />
-              <CarCard name='Kia Carens' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Kia" carImage="/images/carImages/kia1.webp" />
-              <CarCard name="Innova Crysta" airportRate="1500" rate1="3000" rate2="4000" rate3="18" capacity="6 + 1" driverRate="300" rentName="Crysta" carImage="/images/carImages/crysta1.webp" />
+              <PremiumCard name="Mercedes Gls" image="/images/carImages/gls2.jpg" />
+              <PremiumCard name="Mercedes S Class" image="/images/carImages/sclass2.jpg" />
+              <PremiumCard name="Mercedes E Class" image="/images/carImages/eclass1.webp" />
+              <PremiumCard name="Bmw X7" image="/images/carImages/x7_1.webp" />
+              <PremiumCard name="Bmw 5 Series" image="/images/carImages/series5_1.jpg" />
+              <PremiumCard name="Bmw 3 Series" image="/images/carImages/3series_1.jpg" />
               
             </div>
         ): (
@@ -122,6 +130,9 @@ function App() {
         )}
         
 
+
+      </div>
+      <div className="tourPlan">
 
       </div>
     </main>
