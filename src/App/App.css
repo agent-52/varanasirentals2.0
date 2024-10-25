@@ -319,7 +319,7 @@
   padding-inline: 1rem;
 }
 .pb2{
-  padding-block: 2rem;
+  padding-block: 2.5rem;
 }
 .pt1{
   padding-top: 1rem;
@@ -643,6 +643,13 @@
 }
 #carImg{
   transition: all 0.2s ease-in;
+}
+
+.tourCardArray{
+  width: 100%;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .reviewImgBox{
