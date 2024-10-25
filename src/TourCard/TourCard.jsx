@@ -17,7 +17,7 @@ const TourCard = ({name="",price1="8,500", distance="250",placesCovered="Triveni
             
             <div className="flexC gap1 pi0 ">
                 <h1>{name}</h1>
-                <p>{desc}</p>
+                <p className="text-black-a9">{desc}</p>
                 <div className="break"></div>
                 <ul className="flexC gap0 text-sm1 text-black-a9">
 
