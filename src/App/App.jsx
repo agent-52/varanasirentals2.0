@@ -15,6 +15,8 @@ import carfleet from "/images/carImages/carfleet1.png"
 import tempofleet from "/images/carImages/carfleet3.png"
 import bus1 from "/images/carImages/bus2.png"
 import TourArray from '../TourArray/TourArray';
+import Footer from '../Footer/Footer';
+
 
 function App() {
   useEffect(() =>{
@@ -152,6 +154,9 @@ function App() {
           <TourArray />
       </div>
     </section>
+    <footer>
+      <Footer />
+    </footer>
     </>
   )
 }
