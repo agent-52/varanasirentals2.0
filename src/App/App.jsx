@@ -148,9 +148,9 @@ function App() {
       
     </main>
     <section className="tourPlan font-sans pb2">
-      <div className='flexC gap1_5 alignC'>
+      <div className='flexC gap1_5 alignC' id='travelPackages'>
           <div className='rental text-sm font-medium1 noWrap'>TOUR PLANS</div>
-          <h1 className='text-medium'>Varanasi Tour Packages</h1>
+          <h1 className='text-medium' >Varanasi Tour Packages</h1>
           <TourArray />
       </div>
     </section>

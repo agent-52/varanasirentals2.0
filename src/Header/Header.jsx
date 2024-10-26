@@ -36,7 +36,7 @@ const Header = () =>
         
         <HashLink smooth to="/#rentalPage" className="textDecNone"><div className="font-medium1 text-sm1 ">Rental Cars </div></HashLink>
         <HashLink smooth to="/#rentalPage" className="textDecNone"><div className="font-medium1 text-sm1">Bus/Tempo</div></HashLink>
-        <Link to="/travelPackages" className="textDecNone"><div className="font-medium1 text-sm1">Tours & Packages</div></Link>
+        <HashLink smooth to="/#travelPackages" className="textDecNone"><div className="font-medium1 text-sm1">Tours & Packages</div></HashLink>
         <Link to="/about" className="textDecNone"><div className="font-medium1 text-sm1">About</div></Link>
         {/* <Link to="/contactDetails" className="textDecNone"><div className="font-medium1 text-sm1">Contact us</div></Link> */}
         <Link className="textDecNone" to="/">

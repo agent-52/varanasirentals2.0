@@ -58,7 +58,7 @@ const TourCard = ({name="",price1="8,500", distance="250",placesCovered="Triveni
                 </ul>
                 
             </div>
-            <button className="pi0 bookButton font-medium1 text-sm1">Book Now </button>
+            <button className="pi0 bookButton font-medium1 text-sm1 mgT1">Book Now </button>
         </div>
     )
 }
