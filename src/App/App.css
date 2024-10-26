@@ -295,6 +295,9 @@
 .text-medium1{
   font-size: 1.8rem;
 }
+.text-medium1_0{
+  font-size: 1.5rem;
+}
 .text-medium2{
   font-size: 2.2rem;
 }
@@ -346,6 +349,10 @@
 /*flex*/
 .grid{
   display: grid;
+}
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
 }
 .navDesktop{
   display: flex;
@@ -621,6 +628,35 @@
   background-color: #FF2C38;
   border: 1px solid #FF2C38;
   color:white;
+  
+
+}
+.bookButton2{
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+ 
+  width: 100%;
+  border-radius: 0.4rem;
+ 
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  align-self:flex-end;
+  background-color: #FF2C38;
+  border: 1px solid #FF2C38;
+  color:white;
+}
+
+.bookButton2:hover{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  
+
+}
+.bookButton2:active{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
   
 
 }

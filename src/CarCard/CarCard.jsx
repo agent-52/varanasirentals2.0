@@ -1,9 +1,9 @@
 import "./CarCard.css"
 import stars from "/images/logos/stars.png"
 import car1 from "/images/carImages/kia.jpg"
+import { Link } from "react-router-dom"
 
-
-const CarCard = ({name="Toyota sports",airportRate="700", rate1, rate2, rate3, capacity, driverRate, rentName, carImage="/images/carImages/kia.jpg" }) =>{
+const CarCard = ({name="Toyota sports",airportRate="700", rate1, rate2, rate3, capacity, driverRate, rentName, carImage="/images/carImages/kia.jpg", routeLink="/" }) =>{
 
     return(
         <div className="flexC gap1 card">
@@ -28,13 +28,13 @@ const CarCard = ({name="Toyota sports",airportRate="700", rate1, rate2, rate3, c
                     <li>Driver Charge = ₹{driverRate}</li>
                     <li >Capacity = {capacity}</li>
                 </ul>
-                <button className="bookButton font-medium1 text-sm1">Book {rentName}</button>
+                <Link className="textDecNone" to={routeLink}><button className="bookButton font-medium1 text-sm1">Book {rentName}</button></Link>
             </div>
         </div>
     )
 }
 
-const TempoCard = ({name="",airportRate="700", rate1, rate3, capacity, driverRate, image="/images/carImages/kia.jpg" }) => {
+const TempoCard = ({name="",airportRate="700", rate1, rate3, capacity, driverRate, image="/images/carImages/kia.jpg", routeLink="/" }) => {
 
     return(
         <div className="flexC gap1 card">
@@ -59,13 +59,13 @@ const TempoCard = ({name="",airportRate="700", rate1, rate3, capacity, driverRat
                     <li>Driver Charge = ₹{driverRate}</li>
                     
                 </ul>
-                <button className="bookButton font-medium1 text-sm1">Book Now</button>
+                <Link className="textDecNone" to={routeLink}><button className="bookButton font-medium1 text-sm1">Book Now</button></Link>
             </div>
         </div>
     )
 }
 
-const PremiumCard = ({name="", image="/images/carImages/kia.jpg" }) => {
+const PremiumCard = ({name="", image="/images/carImages/kia.jpg", routeLink="/" }) => {
 
     return(
         <div className="flexC gap1 card">
@@ -82,7 +82,7 @@ const PremiumCard = ({name="", image="/images/carImages/kia.jpg" }) => {
                 <h1>{name}</h1>
                 <div className="break"></div>
                 
-                <button className="bookButton font-medium1 text-sm1">Make Reservation</button>
+                <Link className="textDecNone" to={routeLink}><button className="bookButton font-medium1 text-sm1">Make Reservation</button></Link>
             </div>
         </div>
     )
