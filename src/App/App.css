@@ -542,6 +542,19 @@
   object-fit: contain;
   object-position: center;
 }
+.imgBox4{
+  overflow: hidden;
+  height: 80%;
+  width: 100%;
+  
+}
+.imgBox4>img{
+  /* transform: rotate(30deg); */
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position: center;
+}
 
 
 
@@ -667,11 +680,15 @@
 
 /*fleetpage*/
 .fleetPage{
-  background-color: rgba(177, 177, 177, 0.226)
+  background-color: rgba(177, 177, 177, 0.226);
+  
 }
 .buttonArray{
   
   
+}
+.tourPlan{
+  margin-block: 2rem;
 }
 .buttonArray button{
   border: 2px solid black;

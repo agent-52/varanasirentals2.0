@@ -7,3 +7,9 @@ select{
     border-radius: 0.5rem;
     width: min-content;
 }
+#mainSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
