@@ -19,8 +19,9 @@ import Footer from '../Footer/Footer';
 
 import Chatbot from 'react-chatbot-kit'
 import ActionProvider from '../ChatBot/ActionProvider';
-import MessageParser from '../ChatBot/MessageParser';
-import config from '../ChatBot/config';
+import MessageParser from '../ChatBot/MessageParser.js';
+import config from '../ChatBot/config.jsx';
+// import 'react-chatbot-kit/build/main.css';
 
 function App() {
   useEffect(() =>{
@@ -34,7 +35,7 @@ function App() {
     <>
     <div className='font-sans body relative'>
     <div className='bot'>
-      <Chatbot config={config} actionProvider={ActionProvider}         messageParser={MessageParser} />
+      <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
     </div>
      <Header />
      

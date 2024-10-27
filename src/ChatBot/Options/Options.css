@@ -1,0 +1,15 @@
+.option-button{
+    background-color: white;
+    color: black;
+    border-radius: 0.3rem;
+    border: 2px solid pink;
+    padding: 0.8rem 1rem;
+    
+
+}
+.options-container{
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    gap: 0.4rem;
+}
