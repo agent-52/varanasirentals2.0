@@ -13,3 +13,14 @@ select{
     gap: 2rem;
     align-items: center;
 }
+.featurePage{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem;
+    
+    background-color: #ff2c3a10;
+    padding-block: 4rem;
+   
+    margin-block: 3rem;
+    
+}

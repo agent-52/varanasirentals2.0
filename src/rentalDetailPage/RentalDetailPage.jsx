@@ -5,6 +5,12 @@ import Slider from "../Slider/Slider";
 import { useEffect } from "react";
 import { useState } from "react";
 
+import ice from "/images/logos/ice.png"
+import seat from "/images/logos/seat.png"
+import aid from "/images/logos/aid.png"
+import bluetooth from "/images/logos/bluetooth.png"
+import gps from "/images/logos/gps.png"
+
 
 const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1, rental2, rental3 , extra1, extra2, driver}) =>{
     const [packagePrice, setPackagePrice ]= useState(rental1)
@@ -78,49 +84,49 @@ const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1,
 
             </main>
             <section className="featurePage pi1">
-                <div>
-                    <div>
-                        <div><img src="" alt="" /></div>
+                <div className="flex alignC gap1">
+                    <div className="img5Container">
+                        <div className="imgBox5"><img src={ice} alt="" /></div>
                     </div>
-                    <div>
-                        <h4>Air Condition</h4>
-                        <div className="tex-sm">All our cars comes with Air Conditioner as standard to keep you comfortable.</div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div><img src="" alt="" /></div>
-                    </div>
-                    <div>
-                        <h4>Airbags</h4>
-                        <div className="text-sm">Our cars comes with factory fitted air bags to keep you safe.</div>
+                    <div className="flexC gap0">
+                        <h4 className="text-medium1 font-medium">Air Condition</h4>
+                        <div className="tex-sm0 text-black-a9">All our cars comes with Air Conditioner as standard to keep you comfortable.</div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div><img src="" alt="" /></div>
+                <div className="flex alignC gap1">
+                    <div className="img5Container">
+                        <div className="imgBox5"><img src={seat} alt="" /></div>
                     </div>
                     <div>
-                        <h4>GPS Tracker</h4>
-                        <div className="text-sm">Your safety is our priorty, to keep you safe all our cars fitted with gps trackers & are monitored round the clock.</div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div><img src="" alt="" /></div>
-                    </div>
-                    <div>
-                        <h4>Bluetooth</h4>
-                        <div className="text-sm">Our cars have an excellent bluetooth connectivity to keep you entertained.</div>
+                        <h4 className="text-medium1 font-medium">Airbags</h4>
+                        <div className="text-sm0 text-black-a9">Our cars comes with factory fitted air bags to keep you safe.</div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div><img src="" alt="" /></div>
+                <div className="flex alignC gap1">
+                    <div className="img5Container">
+                        <div className="imgBox5"><img src={gps} alt="" /></div>
                     </div>
                     <div>
-                        <h4>First Aid Kit</h4>
-                        <div>First aid kits are mandatroy in our cars.</div>
+                        <h4 className="text-medium1 font-medium">GPS Tracker</h4>
+                        <div className="text-sm0 text-black-a9">Your safety is our priorty, to keep you safe all our cars fitted with gps trackers & are monitored round the clock.</div>
+                    </div>
+                </div>
+                <div className="flex alignC gap1">
+                    <div className="img5Container">
+                        <div className="imgBox5"><img src={bluetooth} alt="" /></div>
+                    </div>
+                    <div>
+                        <h4 className="text-medium1 font-medium">Bluetooth</h4>
+                        <div className="text-sm0 text-black-a9">Our cars have an excellent bluetooth connectivity to keep you entertained.</div>
+                    </div>
+                </div>
+                <div className="flex alignC gap1">
+                    <div className="img5Container">
+                        <div className="imgBox5"><img src={aid} alt="" /></div>
+                    </div>
+                    <div>
+                        <h4 className="text-medium1 font-medium">First Aid Kit</h4>
+                        <div className="text-sm0 text-black-a9">First aid kits are mandatroy in our cars.</div>
                     </div>
                 </div>
                
