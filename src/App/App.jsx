@@ -17,6 +17,10 @@ import bus1 from "/images/carImages/bus2.png"
 import TourArray from '../TourArray/TourArray';
 import Footer from '../Footer/Footer';
 
+import Chatbot from 'react-chatbot-kit'
+import ActionProvider from '../ChatBot/ActionProvider';
+import MessageParser from '../ChatBot/MessageParser';
+import config from '../ChatBot/config';
 
 function App() {
   useEffect(() =>{
@@ -28,8 +32,12 @@ function App() {
 
   return (
     <>
-    <div className='font-sans body'>
+    <div className='font-sans body relative'>
+    <div className='bot'>
+      <Chatbot config={config} actionProvider={ActionProvider}         messageParser={MessageParser} />
+    </div>
      <Header />
+     
      <section className='page1 flex relative overflowX' id='front-section'>
         <div className='pi1 bgi1 fullWidth flex alignC h100 gap2 justify-between'>
           <div className='flexC gap2'>
