@@ -20,14 +20,14 @@ const Options = (props) =>{
         },
         {
             text:"Premium Cars",
-            handler: props.actionProvider.handlePremiumCarsRental,
+            handler: props.actionProvider.handlePremiumRental,
             id:4,
         },
-        {
-            text:"Tour Packages",
-            handler: props.actionProvider.handleTourPackages,
-            id:5,
-        },
+        // {
+        //     text:"Tour Packages",
+        //     handler: props.actionProvider.handleTourPackages,
+        //     id:5,
+        // },
     ]
 
     const buttonMarkup = options.map((option) => (

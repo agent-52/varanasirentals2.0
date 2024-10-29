@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./TourCard.css"
 
 import rupee from "/images/logos/rupee.png"
@@ -9,7 +10,7 @@ import parking from "/images/logos/parking.png"
 import bus from "/images/logos/bus.png"
 
 
-const TourCard = ({name="",price1="8,500", distance="250",placesCovered="Triveni Sangam , Sleeping Hanuman Temple, Akshay Vat, Alopi Devi Temple,  Anand Bhavan", desc="A compact travell package from Varanasi to Prayagraj (Allahabad) designed to cover all the prominent sights between Varanasi and Prayagraj (Allahbad) like Triveni Sangam, Sleeping Hanuman Temple, Akshay Vat, Alopi Devi temple, Anand Bhavan", days="1 day", image="/images/carImages/kia.jpg" }) =>{
+const TourCard = ({name="",price1="8,500", distance="250",placesCovered="Triveni Sangam , Sleeping Hanuman Temple, Akshay Vat, Alopi Devi Temple,  Anand Bhavan", desc="A compact travell package from Varanasi to Prayagraj (Allahabad) designed to cover all the prominent sights between Varanasi and Prayagraj (Allahbad) like Triveni Sangam, Sleeping Hanuman Temple, Akshay Vat, Alopi Devi temple, Anand Bhavan", days="1 day", image="/images/carImages/kia.jpg", routeLink="/" }) =>{
 
     return(
         <div className=" gap0 tourcard">
@@ -58,7 +59,7 @@ const TourCard = ({name="",price1="8,500", distance="250",placesCovered="Triveni
                 </ul>
                 
             </div>
-            <button className="pi0 bookButton font-medium1 text-sm1 mgT1">Book Now </button>
+            <Link className="textDecNone" to={routeLink}><button className="pi0 bookButton font-medium1 text-sm1 mgT1">Book Now </button></Link>
         </div>
     )
 }

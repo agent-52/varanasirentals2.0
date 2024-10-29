@@ -13,3 +13,6 @@
     white-space: nowrap;
     gap: 0.4rem;
 }
+a{
+    text-decoration: none;
+}
