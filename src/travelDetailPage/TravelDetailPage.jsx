@@ -12,7 +12,7 @@ import { useState } from "react";
 import gps from "/images/logos/gps.png"
 
 
-const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, extra1, distance, place1, place2, place4, place5, place3}) =>{
+const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, extra1, distance, place1, place2, place4, place5, place3, days="1 Day", whatsappLink}) =>{
     const [packagePrice, setPackagePrice ]= useState(rental1)
     function updatePackagePrice(e){
         const selectedOption = e.target.value
@@ -41,9 +41,9 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
                         </ul> */}
                     </div>
                     <div className="flexC gap1">
-                        <h3 className="text-sm1 font-medium">Choose Package</h3>
+                        <h3 className="text-sm1 font-medium">Choose Vehicle</h3>
                         <select name="package" id="package" className="text-medium1" onChange={updatePackagePrice} autoFocus>
-                            <option value="package1" >Traveller(10-16 Seat)</option>
+                            <option value="package1" >Traveller (10-16 Seat)</option>
                             <option value="package2">Urbania</option>
                             
                         </select>
@@ -70,7 +70,7 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
                             </div>
                             
                         </div>
-                        <button className="bookButton2 text-sm1">Book Tour </button>
+                        <a className="textDecNone" href={whatsappLink} target="_blank" rel="noopener noreferrer"><button className="bookButton2 text-sm1">Book Tour </button></a>
                     </div>
 
                 </div>
@@ -81,9 +81,12 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
 
 
             </main>
-            <section className="pi1">
-                <h2 className="text-sm1">Itinerary</h2>
-                <p className="text-black-a9">{desc}</p>
+            <section className="pi1 pb2 ">
+                <div className="flexC gap0">
+                    <h2 className="text-medium1 font-medium">Itinerary</h2>
+                    <p className="text-black-a9">{desc}</p>
+                </div>
+                
             </section>
             <section className="featurePage pi1">
                 
