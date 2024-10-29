@@ -25,22 +25,29 @@ import config from '../ChatBot/config.jsx';
 
 function App() {
   useEffect(() =>{
-    const botIconContainer =  document.querySelector(".botIconContainer")
-    const bot = document.querySelector(".bot")
-
-    botIconContainer.addEventListener("click", () =>{
-      bot.classList.toggle("hidden")
-    })
 
   })
   const {name} = useParams();
   const [count, setCount] = useState(0)
-
+  const [botVisibility, setBotVisibility] = useState("hidden")
+  const updateBotVisibility = () =>{
+    const bot = document.querySelector(".bot")
+    if(botVisibility == "hidden"){   
+        bot.classList.remove("hidden")
+        bot.classList.add("visible")
+        setBotVisibility("visible")
+    }else if(botVisibility == "visible"){
+      bot.classList.remove("visible")
+      bot.classList.add("hidden")
+      setBotVisibility("hidden")
+    }
+    console.log("hi")
+  }
   return (
     <>
     <div className='font-sans body relative'>
-    <div className="botIconContainer"><div className="botIcon"><img src="/images/logos/chatbot-icon.png" alt="" /></div></div>
-    <div className='bot'>
+    <div className="botIconContainer" onClick={updateBotVisibility}><div className="botIcon"><img src="/images/logos/chatbot-icon.png" alt="" /></div></div>
+    <div className='bot hidden' >
       <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
     </div>
      <Header />
