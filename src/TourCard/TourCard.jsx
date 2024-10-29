@@ -10,12 +10,12 @@ import parking from "/images/logos/parking.png"
 import bus from "/images/logos/bus.png"
 
 
-const TourCard = ({name="",price1="8,500", distance="250",placesCovered="Triveni Sangam , Sleeping Hanuman Temple, Akshay Vat, Alopi Devi Temple,  Anand Bhavan", desc="A compact travell package from Varanasi to Prayagraj (Allahabad) designed to cover all the prominent sights between Varanasi and Prayagraj (Allahbad) like Triveni Sangam, Sleeping Hanuman Temple, Akshay Vat, Alopi Devi temple, Anand Bhavan", days="1 day", image="/images/carImages/kia.jpg", routeLink="/" }) =>{
+const TourCard = ({name="",price1="8,500", distance="250",placesCovered="Triveni Sangam, Sleeping Hanuman Temple, Akshay Vat, Alopi Devi Temple,  Anand Bhavan ", desc="A compact travell package from Varanasi to Prayagraj (Allahabad) designed to cover all the prominent sights between Varanasi and Prayagraj (Allahbad) like Triveni Sangam, Sleeping Hanuman Temple, Akshay Vat, Alopi Devi temple, Anand Bhavan and back to Varanasi", days="1 day", image="/images/carImages/kia.jpg", routeLink="/" }) =>{
 
     return(
         <div className=" gap0 tourcard">
             
-            <div className="carImgBox"><img id="carImg" src={image} alt="image of the respective tour package" /></div>
+            <div className="tourImgBox"><img id="carImg" src={image} alt="image of the respective tour package" /></div>
 
                 
             
