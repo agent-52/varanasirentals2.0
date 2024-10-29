@@ -8,6 +8,19 @@ import call from "/images/logos/call.png"
 import backArrow from "/images/logos/arrow.png"
 const Header = () =>
 {
+  useEffect(() =>{
+
+    const rentalCarsList = document.querySelector(".rentalCarsList")
+    const carHeading = document.querySelector(".carHeading")
+    carHeading.addEventListener("mouseenter", () =>{
+      rentalCarsList.classList.add("visible")
+      rentalCarsList.classList.remove("hidden")
+    })
+    carHeading.addEventListener("mouseleave", () =>{
+      rentalCarsList.classList.add("hidden")
+      rentalCarsList.classList.remove("visible")
+    })
+  })
   const [navVisibility, setNavVisibility] = useState(false)
   function updateNavVisibilty(){
     if(navVisibility == true){
@@ -28,13 +41,22 @@ const Header = () =>
         <div className="flex alignC gap00">
           <div className="imgBox1"><img src={logo} alt="varanasi rentals logo" /></div>
           
-          <h1 className="text-medium2 noWrap" >Varanasi <span className="text-pink">Rentals</span></h1>
+          <h1 className="text-medium2 noWrap" >Varanasi Taxi<span className="text-pink">Rentals</span></h1>
         </div>
         
       </Link>
       <div className="navDesktop text-black-a9 text-sm1 flex gap2 alignC">
         
-        <HashLink smooth to="/#rentalPage" className="textDecNone"><div className="font-medium1 text-sm1 ">Rental Cars </div></HashLink>
+        <HashLink smooth to="/#rentalPage" className="textDecNone"><div className="font-medium1 text-sm1 carHeading">Rental Cars
+          <ul className="hidden rentalCarsList">
+            <li>Rent Crysta</li>
+            <li>Rent Fortuner</li>
+            <li>Rent Ertiga</li>
+            <li>Rent Kia Carens</li>
+            <li>Rent Dzire</li>
+            <li>Rent Honda City</li>
+          </ul>
+           </div></HashLink>
         <HashLink smooth to="/#rentalPage" className="textDecNone"><div className="font-medium1 text-sm1">Bus/Tempo</div></HashLink>
         <HashLink smooth to="/#travelPackages" className="textDecNone"><div className="font-medium1 text-sm1">Tours & Packages</div></HashLink>
         <Link to="/about" className="textDecNone"><div className="font-medium1 text-sm1">About</div></Link>

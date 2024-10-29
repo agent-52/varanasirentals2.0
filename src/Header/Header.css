@@ -32,6 +32,23 @@
   height: 2px;
 }
 
+.rentalCarsList{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  padding: 1rem ;
+  color: rgba(0, 0, 0, 0.596);
+  background-color: rgba(255, 255, 255, 0.656);
+
+}
+.rentalCarsList li:hover{
+  color: #FF2C3B;
+}
+.rentalCarsList li:active{
+  color: #FF2C3B;
+}
+
 @media (max-width:768px) {
   .header2{
     display: flexbox;
