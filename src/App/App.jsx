@@ -25,7 +25,12 @@ import config from '../ChatBot/config.jsx';
 
 function App() {
   useEffect(() =>{
+    const botIconContainer =  document.querySelector(".botIconContainer")
+    const bot = document.querySelector(".bot")
 
+    botIconContainer.addEventListener("click", () =>{
+      bot.classList.toggle("hidden")
+    })
 
   })
   const {name} = useParams();
@@ -34,6 +39,7 @@ function App() {
   return (
     <>
     <div className='font-sans body relative'>
+    <div className="botIconContainer"><div className="botIcon"><img src="/images/logos/chatbot-icon.png" alt="" /></div></div>
     <div className='bot'>
       <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
     </div>
