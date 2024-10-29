@@ -12,15 +12,18 @@ import { useState } from "react";
 import gps from "/images/logos/gps.png"
 
 
-const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, extra1, distance, place1, place2, place4, place5, place3, days="1 Day", whatsappLink}) =>{
+const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, extra1, extra2="30", distance, place1, place2, place4, place5, place3, days="1 Day", whatsappLink}) =>{
     const [packagePrice, setPackagePrice ]= useState(rental1)
+    const [extraPrice, setExtraPrice ]= useState(extra1)
     function updatePackagePrice(e){
         const selectedOption = e.target.value
         if (selectedOption == "package1") {
             setPackagePrice(rental1)
+            setExtraPrice(extra1)
             console.log("changed")
         }else if (selectedOption == "package2") {
             setPackagePrice(rental2)
+            setExtraPrice(extra2)
             console.log("changed")
         }
     }
@@ -61,7 +64,7 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
                             </div>
                             <div className="flexC gap0">
                                 <div className="text-sm1">Extra Per/KM</div>
-                                <div className="text-medium1_0 font-medium">₹{extra1}</div>
+                                <div className="text-medium1_0 font-medium">₹{extraPrice}</div>
                             </div>
                             
                             <div className="flexC gap0">
