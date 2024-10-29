@@ -10,9 +10,10 @@ import seat from "/images/logos/seat.png"
 import aid from "/images/logos/aid.png"
 import bluetooth from "/images/logos/bluetooth.png"
 import gps from "/images/logos/gps.png"
+import water from "/images/logos/water.png"
 
 
-const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1, rental2, rental3 , extra1, extra2, driver}) =>{
+const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1, rental2, rental3 , extra1, extra2, driver, optionArray=[{text:"Standard - 8hr 80Km",value:"package1"}, {text:"Premium - 12hr 120Km", value:"package2"},{text:"Airport Pick/Drop", value:"airport"} ]}) =>{
     const [packagePrice, setPackagePrice ]= useState(rental1)
     function updatePackagePrice(e){
         const selectedOption = e.target.value
@@ -46,9 +47,12 @@ const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1,
                     <div className="flexC gap1">
                         <h3 className="text-sm1 font-medium">Choose Package</h3>
                         <select name="package" id="package" className="text-medium1" onChange={updatePackagePrice} autoFocus>
-                            <option value="package1" >Standard - 8hr 80Km</option>
-                            <option value="package2">Premium - 12hr 120Km</option>
-                            <option value="airport">Airport Pick/Drop</option>
+                            {optionArray.map((options) =>{
+                                return(
+                                    <option value={options.value}>{options.text}</option>
+                                )
+                            })}
+                            
                         </select>
                     </div>
                     <div className="break"></div>
@@ -127,6 +131,15 @@ const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1,
                     <div>
                         <h4 className="text-medium1 font-medium">First Aid Kit</h4>
                         <div className="text-sm0 text-black-a9">First aid kits are mandatroy in our cars.</div>
+                    </div>
+                </div>
+                <div className="flex alignC gap1">
+                    <div className="img5Container">
+                        <div className="imgBox5"><img src={water} alt="" /></div>
+                    </div>
+                    <div>
+                        <h4 className="text-medium1 font-medium">Water Bottles</h4>
+                        <div className="text-sm0 text-black-a9">We provide free water bottles with our cars.</div>
                     </div>
                 </div>
                

@@ -49,12 +49,13 @@ const Header = () =>
         
         <HashLink smooth to="/#rentalPage" className="textDecNone"><div className="font-medium1 text-sm1 carHeading">Rental Cars
           <ul className="hidden rentalCarsList">
-            <li>Rent Crysta</li>
-            <li>Rent Fortuner</li>
-            <li>Rent Ertiga</li>
-            <li>Rent Kia Carens</li>
-            <li>Rent Dzire</li>
-            <li>Rent Honda City</li>
+            <Link className="textDecNone" to="/rentalPage/Crysta"><li>Rent Crysta</li></Link>
+            <Link className="textDecNone" to="/rentalPage/Fortuner"><li>Rent Fortuner</li></Link>
+            <Link className="textDecNone" to="/rentalPage/Ertiga"><li>Rent Ertiga</li></Link>
+            <Link className="textDecNone" to="/rentalPage/Hycross"><li>Rent Hycross</li></Link>
+            <Link className="textDecNone" to="/rentalPage/Kia"><li>Rent Kia Carens</li></Link>
+            <Link className="textDecNone" to="/rentalPage/Swift"><li>Rent Dzire</li></Link>
+            <Link className="textDecNone" to="/rentalPage/HondaCity"><li>Rent Honda City</li></Link>
           </ul>
            </div></HashLink>
         <HashLink smooth to="/#rentalPage" className="textDecNone"><div className="font-medium1 text-sm1">Bus/Tempo</div></HashLink>
@@ -65,10 +66,14 @@ const Header = () =>
         <div className="flex alignC gap00">
           <div className="imgBox"><img src={call} alt="varanasi rentals logo" /></div>
           
-          <div className="flexC">
+          <a className="textDecNone" href="tel:9250028001"><div className="flexC">
             <h1 className="text-sm noWrap" >need help ? </h1>
-            <div className="text-pink text-sm1">9250028001 </div>
-          </div>
+            <div className="flexC">
+              <div className="text-pink text-sm1">9250028001</div>
+              {/* <div className="text-pink text-sm1">9335359900</div> */}
+            </div>
+            
+          </div></a>
         </div>
         
       </Link>
