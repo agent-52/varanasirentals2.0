@@ -74,19 +74,19 @@ const routes = [
   //buses routes
   {
     path: "/rentalPage/MiniBus",
-    element: <RentalDetailPage name1="Mini Bus" name2="30-35 Seater"  capacity="30 - 35"  rental1="9500" extra1="50" version="2" driver="1500" carImages="/images/carImages/bus4.jpg" optionArray={optionArray3}/>,
+    element: <RentalDetailPage name1="Mini Bus" name2="30-35 Seater"  capacity="30 - 35"  rental1="9500" extra1="50" version="2" driver="1500" carImages="/images/carImages/bus4.jpg" optionArray={optionArray3} whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2030-35%20seater%20Mini%20bus"/>,
   },
   {
     path: "/rentalPage/40SeaterBus",
-    element: <RentalDetailPage name1="Bus" name2="40 Seater"  capacity="40"  rental1="11000" extra1="55" version="2" driver="1500" carImages="/images/carImages/bus3.png" optionArray={optionArray3}/>,
+    element: <RentalDetailPage name1="Bus" name2="40 Seater"  capacity="40"  rental1="11000" extra1="55" version="2" driver="1500" carImages="/images/carImages/bus3.png" optionArray={optionArray3} whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20%40%20seater%20Bus"/>,
   },
   {
     path: "/rentalPage/45SeaterBus",
-    element: <RentalDetailPage name1="Bus" name2="45 Seater"  capacity="45"  rental1="12500" extra1="60" version="2" driver="1500" carImages="/images/carImages/bus5.jpg" optionArray={optionArray3}/>,
+    element: <RentalDetailPage name1="Bus" name2="45 Seater"  capacity="45"  rental1="12500" extra1="60" version="2" driver="1500" carImages="/images/carImages/bus5.jpg" optionArray={optionArray3} whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20%45%20seater%20Bus"/>,
   },
   {
     path: "/rentalPage/49SeaterBus",
-    element: <RentalDetailPage name1=" Bus" name2="49 Seater"  capacity="49"  rental1="14500" extra1="65" version="2" driver="1500" carImages="/images/carImages/bus6.jpg" optionArray={optionArray3}/>,
+    element: <RentalDetailPage name1=" Bus" name2="49 Seater"  capacity="49"  rental1="14500" extra1="65" version="2" driver="1500" carImages="/images/carImages/bus6.jpg" optionArray={optionArray3} whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2049%20seater%20Bus"/>,
   },
 
 

@@ -96,7 +96,7 @@ const BusCard = ({name="", rate1, rate3, capacity, driverRate, image="/images/ca
     )
 }
 
-const PremiumCard = ({name="", image="/images/carImages/kia.jpg", routeLink="/" }) => {
+const PremiumCard = ({name="", image="/images/carImages/kia.jpg", routeLink="/", whatsappLink }) => {
 
     return(
         <div className="flexC gap1 card">
@@ -113,7 +113,7 @@ const PremiumCard = ({name="", image="/images/carImages/kia.jpg", routeLink="/" 
                 <h1>{name}</h1>
                 <div className="break"></div>
                 
-                <Link className="textDecNone" to={routeLink}><button className="bookButton font-medium1 text-sm1">Make Reservation</button></Link>
+                <a className="textDecNone" href={whatsappLink} target="_blank"><button className="bookButton font-medium1 text-sm1">Make Reservation</button></a>
             </div>
         </div>
     )

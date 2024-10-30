@@ -60,4 +60,28 @@ const TempoPackages = (props) =>{
     return <div className="options-container">{buttonArray}</div>
 }
 
-export {CarPackages, TempoPackages};
+const BusPackages = (props) =>{
+
+    const options = [
+        
+        {
+            text:"1 Day/300Km",
+            link:props.link1,
+            id:1,
+        },
+        {
+            text:"Call us",
+            link:props.link2,
+            id:2, 
+        }
+        
+    ]
+
+    const buttonArray = options.map((option) => (
+        <a href={option.link} target="_blank"><button key={option.id} className="option-button">{option.text}</button></a>
+    ))
+
+    return <div className="options-container">{buttonArray}</div>
+}
+
+export {CarPackages, TempoPackages, BusPackages};

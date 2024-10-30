@@ -1,7 +1,7 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import Options from "./Options/Options"
 import { CarButtons } from "./CarButtons/CarButtons";
-import { CarPackages, TempoPackages } from "./CarPackages/CarPackages";
+import { CarPackages, TempoPackages, BusPackages } from "./CarPackages/CarPackages";
 import { TempoButtons, PremiumButtons, BusButtons } from "./CarButtons/CarButtons";
 
 
@@ -173,7 +173,40 @@ const config = {
       }
     },
 
-    //premium
+    //buses
+
+    {
+      widgetName: 'minibus',
+      widgetFunc: (props) => <BusPackages {...props} />,
+      props:{  
+        link1:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2030-35%20seater%20Mini%20bus",
+        link2:"tel:9250028001"
+      }
+    },
+    {
+      widgetName: '40seaterbus',
+      widgetFunc: (props) => <BusPackages {...props} />,
+      props:{  
+        link1:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20%40%20seater%20Bus",
+        link2:"tel:9250028001"
+      }
+    },
+    {
+      widgetName: '45seaterbus',
+      widgetFunc: (props) => <BusPackages {...props} />,
+      props:{  
+        link1:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20%45%20seater%20Bus",
+        link2:"tel:9250028001"
+      }
+    },
+    {
+      widgetName: '49seaterbus',
+      widgetFunc: (props) => <BusPackages {...props} />,
+      props:{  
+        link1:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2049%20seater%20Bus",
+        link2:"tel:9250028001"
+      }
+    },
 
 
   ],

@@ -246,6 +246,60 @@ class ActionProvider {
     this.addMessageToState(message)
    }
 
+   handleMiniBus = () =>{
+
+    const message1 = this.createChatBotMessage(
+      "Here are the rental details of our 30-35 seater Mini bus"
+    )
+    const message2 = this.createChatBotMessage(
+      `1 Day/300Km = ₹9500`, {
+        widget: "minibus"
+      }
+    )
+    this.addMessageToState(message1)
+    this.addMessageToState(message2)
+   }
+   handle40Seater = () =>{
+
+    const message1 = this.createChatBotMessage(
+      "Here are the rental details of our 40 seater Bus"
+    )
+    const message2 = this.createChatBotMessage(
+      `1 Day/300Km = ₹11000`, {
+        widget: "40seaterbus"
+      }
+    )
+    this.addMessageToState(message1)
+    this.addMessageToState(message2)
+   }
+   handle45Seater = () =>{
+
+    const message1 = this.createChatBotMessage(
+      "Here are the rental details of our 45 seater Bus"
+    )
+    const message2 = this.createChatBotMessage(
+      `1 Day/300Km = ₹12500`, {
+        widget: "45seaterbus"
+      }
+    )
+    this.addMessageToState(message1)
+    this.addMessageToState(message2)
+   }
+   handle49Seater = () =>{
+
+    const message1 = this.createChatBotMessage(
+      "Here are the rental details of our 49 seater Bus"
+    )
+    const message2 = this.createChatBotMessage(
+      `1 Day/300Km = ₹14500`, {
+        widget: "49seaterbus"
+      }
+    )
+    this.addMessageToState(message1)
+    this.addMessageToState(message2)
+   }
+
+
    
 
 
