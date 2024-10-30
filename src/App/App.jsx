@@ -46,7 +46,7 @@ function App() {
   return (
     <>
     <div className='font-sans body relative'>
-    <div className="botIconContainer" onClick={updateBotVisibility}><div className="botIcon"><img src="/images/logos/chatbot-icon.png" alt="bot icon of varansi taxi rentals" /></div></div>
+    <div className="botIconContainer" onClick={updateBotVisibility}><div className="botIcon"><img src="/images/logos/chatbot-icon.png" alt="bot icon of varansi rental taxi" /></div></div>
     <a href="https://wa.me/919250028001?text=Hi" target='_blank'><div className="whatsappContainer"><div className="whatsapp"><img src="/images/logos/whatsapp.png" alt="whatsapp icon to chat with varanasi taxi rental" /></div></div></a>
     <div className='bot hidden' >
       <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
@@ -54,7 +54,7 @@ function App() {
      <Header />
      
      <section className='page1 flex relative overflowX' id='front-section'>
-        <div className='pi1 bgi1 fullWidth flex alignC h100 gap2 justify-between'>
+        <div className='pi1 bgi1 fullWidth flex alignC h100 gap2 justify-between ' id='section1'>
           <div className='flexC gap2'>
             <div className='rental text-sm font-medium1 noWrap'>CAR RENTAL</div>
             <h1 className='text-large'>Rent Cars in Varanasi</h1>
@@ -64,9 +64,9 @@ function App() {
             </div>
             <HashLink className="textDecNone"  smooth to="/#rentalPage"><Button text="Rent Now >" classArray='text-sm1 button2 font-light'/></HashLink>
           </div>
-          <div className='p1Mi'><img src={carfleet} alt="cars fleet of varanasi rentals" /></div>
+          <div className='p1Mi'><img src={carfleet} alt="cars fleet of varanasi rental taxi" /></div>
         </div>
-        <div className='pi1  bgi1 fullWidth flex alignC h100 gap2 justify-between'>
+        {/* <div className='pi1  bgi1 fullWidth flex alignC h100 gap2 justify-between'>
           <div className='flexC gap2'>
             <div className='rental text-sm font-medium1 noWrap'>TEMPO RENTAL</div>
             <h1 className='text-large'>Rent Tempo's in Varanasi</h1>
@@ -77,8 +77,8 @@ function App() {
             <Link className="textDecNone"><Button text="Rent Now >" classArray='text-sm1 button2 font-light'/></Link>
           </div>
           <div className='p1Mi'><img src={tempofleet} alt="tempo and bus fleet of varanasi rentals" /></div>
-        </div>
-        <div className='pi1 bgi1 fullWidth flex alignC h100 gap2 justify-between'>
+        </div> */}
+        {/* <div className='pi1 bgi1 fullWidth flex alignC h100 gap2 justify-between'>
           <div className='flexC gap2'>
             <div className='rental text-sm font-medium1 noWrap'>BUS RENTAL</div>
             <h1 className='text-large'>Rent Buses in Varanasi</h1>
@@ -89,7 +89,7 @@ function App() {
             <Link className="textDecNone"><Button text="Rent Now >" classArray='text-sm1 button2 font-light'/></Link>
           </div>
           <div className='p1Mi'><img src={bus1} alt=" bus of varanasi rentals" /></div>
-        </div>
+        </div> */}
      </section>
      
     </div>
@@ -101,11 +101,11 @@ function App() {
     </nav> */}
     <main className='fleetPage font-sans pb4' id="rentalPage">
       <div className='flexC gap2 alignC'>
-        <div className="flexC gap1 alignC">
+        <div className="flexC gap1 alignC justify-center">
           <div className='rental text-sm font-medium1 noWrap'>RENTAL COLLECTION</div>
-          <h1 className='text-medium'>Our Fleet Collection</h1>
+          <h1 className='text-medium textC'>Our Fleet Collection</h1>
         </div>
-        <div className='buttonArray flex gap0'>
+        <div className='buttonArray wrap gap0 alignC'>
           <Link className='textDecNone pointer' to="/cars"><button className='font-medium text-sm1'>CARS</button></Link>
           <Link className='textDecNone pointer' to="/tempos"><button className='font-medium text-sm1'>TEMPOS</button></Link>
           <Link className='textDecNone pointer' to="/buses"><button className='font-medium text-sm1'>BUSES</button></Link>
@@ -173,9 +173,9 @@ function App() {
       
     </main>
     <section className="tourPlan font-sans pb2">
-      <div className='flexC gap1_5 alignC' id='travelPackages'>
+      <div className='flexC gap1_5 alignC ' id='travelPackages'>
           <div className='rental text-sm font-medium1 noWrap'>TOUR PLANS</div>
-          <h1 className='text-medium' >Varanasi Tour Packages</h1>
+          <h1 className='text-medium textC' >Varanasi Tour Packages</h1>
           <TourArray />
       </div>
     </section>

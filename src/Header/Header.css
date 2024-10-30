@@ -49,7 +49,7 @@
   color: #FF2C3B;
 }
 
-@media (max-width:768px) {
+@media (max-width:968px) {
   .header2{
     display: flexbox;
     visibility: visible;
@@ -61,7 +61,7 @@
     opacity: 0;
   }
 }
-@media (min-width:769px) {
+@media (min-width:968px) {
   .header2{
     display: none;
     visibility: hidden;
