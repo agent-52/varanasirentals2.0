@@ -110,6 +110,26 @@ const config = {
       }
     },
     {
+      widgetName: 'hondaCityPackages',
+      widgetFunc: (props) => <CarPackages {...props} />,
+      props:{
+        link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Honda%20City%20on%20rent%20for%20Airport%20Pick/Drop",
+        link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Honda%20City",
+        link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Honda%20City",
+        link4:"tel:9250028001"
+      }
+    },
+    {
+      widgetName: 'vernaPackages',
+      widgetFunc: (props) => <CarPackages {...props} />,
+      props:{
+        link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Verna%20Facelift%20on%20rent%20for%20Airport%20Pick/Drop",
+        link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Verna%20Facelift",
+        link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Verna%20Facelift",
+        link4:"tel:9250028001"
+      }
+    },
+    {
       widgetName: 'dzirePackages',
       widgetFunc: (props) => <CarPackages {...props} />,
       props:{

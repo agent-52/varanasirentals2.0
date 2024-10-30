@@ -46,7 +46,7 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
                     <div className="flexC gap1">
                         <h3 className="text-sm1 font-medium">Choose Vehicle</h3>
                         <select name="package" id="package" className="text-medium1" onChange={updatePackagePrice} autoFocus>
-                            <option value="package1" >Traveller (10-16 Seat)</option>
+                            <option value="package1" >Tempo Traveller (10-16 Seat)</option>
                             <option value="package2">Urbania</option>
                             
                         </select>

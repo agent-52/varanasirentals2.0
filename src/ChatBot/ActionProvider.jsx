@@ -118,6 +118,39 @@ class ActionProvider {
     this.addMessageToState(message1)
     this.addMessageToState(message2)
    }
+   handleHondaCity = () =>{
+
+    const message1 = this.createChatBotMessage(
+      "Here are the rent details of Honda City"
+    )
+    const message2 = this.createChatBotMessage(
+      `Airport Pick/Drop = ₹1800 || 
+      8Hr/80Km = ₹3000 || 
+      12Hr/120Km = ₹4000 ||
+      Capacity = 4 + 1`, {
+        widget: "hondaCityPackages"
+      }
+    )
+    this.addMessageToState(message1)
+    this.addMessageToState(message2)
+   }
+   handleVerna = () =>{
+
+    const message1 = this.createChatBotMessage(
+      "Here are the rent details of Verna Facelift"
+    )
+    const message2 = this.createChatBotMessage(
+      `Airport Pick/Drop = ₹1800 || 
+      8Hr/80Km = ₹3000 || 
+      12Hr/120Km = ₹4000 ||
+      Capacity = 4 + 1`, {
+        widget: "vernaPackages"
+      }
+    )
+    this.addMessageToState(message1)
+    this.addMessageToState(message2)
+   }
+
    handleDzire = () =>{
 
     const message1 = this.createChatBotMessage(

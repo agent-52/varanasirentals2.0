@@ -28,6 +28,16 @@ const CarButtons = (props) =>{
             id:5,
         },
         {
+            text:"Honda city",
+            handler: props.actionProvider.handleHondaCity,
+            id:5,
+        },
+        {
+            text:"Verna facelift",
+            handler: props.actionProvider.handleVerna,
+            id:5,
+        },
+        {
             text:"Dzire",
             handler: props.actionProvider.handleDzire,
             id:6,
