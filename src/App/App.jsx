@@ -118,7 +118,10 @@ function App() {
             <CarCard name='Hycross' airportRate="2200" rate1="4500" rate2="6000" rate3="22" capacity="6 + 1" driverRate="400" rentName="Hycross" carImage="/images/carImages/hycross4.webp" routeLink='/rentalPage/Hycross' />
             <CarCard name='Ertiga' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Ertiga" carImage="/images/carImages/ertiga1.webp" routeLink='/rentalPage/Ertiga' />
             <CarCard name='Kia Carens' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Kia" carImage="/images/carImages/kia1.webp" routeLink='/rentalPage/Kia' />
+            <CarCard name='Honda City' airportRate="1800" rate1="3000" rate2="4000" rate3="18" capacity="4 + 1" driverRate="400" rentName="Honda" carImage="/images/carImages/honda2.jpg" routeLink='/rentalPage/hondaCity'/>
+            <CarCard name='Verna Facelift' airportRate="1800" rate1="3000" rate2="4000" rate3="18" capacity="4 + 1" driverRate="400" rentName="Verna" carImage="/images/carImages/verna3.jpg" routeLink='/rentalPage/vernaFacelift'/>
             <CarCard name='Dzire' airportRate="900" rate1="2000" rate2="2500" rate3="11" capacity="4 + 1" driverRate="300" rentName="Dzire" carImage="/images/carImages/swift2.jpg" routeLink='/rentalPage/Swift' />
+            
             
           </div>
         ): name === "tempos" ?(
@@ -155,6 +158,8 @@ function App() {
             <CarCard name='Hycross' airportRate="2200" rate1="4500" rate2="6000" rate3="22" capacity="6 + 1" driverRate="400" rentName="Hycross" carImage="/images/carImages/hycross4.webp" routeLink='/rentalPage/Hycross' />
             <CarCard name='Ertiga' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Ertiga" carImage="/images/carImages/ertiga1.webp" routeLink='/rentalPage/Ertiga' />
             <CarCard name='Kia Carens' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Kia" carImage="/images/carImages/kia1.webp" routeLink='/rentalPage/Kia' />
+            <CarCard name='Honda City' airportRate="1800" rate1="3000" rate2="4000" rate3="18" capacity="4 + 1" driverRate="400" rentName="Honda" carImage="/images/carImages/honda2.jpg" routeLink='/rentalPage/hondaCity'/>
+            <CarCard name='Verna Facelift' airportRate="1800" rate1="3000" rate2="4000" rate3="18" capacity="4 + 1" driverRate="400" rentName="Verna" carImage="/images/carImages/verna3.jpg" routeLink='/rentalPage/vernaFacelift'/>
             <CarCard name='Dzire' airportRate="900" rate1="2000" rate2="2500" rate3="11" capacity="4 + 1" driverRate="300" rentName="Dzire" carImage="/images/carImages/swift2.jpg" routeLink='/rentalPage/Swift' />
 
             

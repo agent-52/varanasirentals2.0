@@ -43,6 +43,14 @@ const routes = [
     path: "/rentalPage/Swift",
     element: <RentalDetailPage name1="Swift Dzire" name2="Swift Dzire"  capacity="4 + 1"  rental1="2000" rental2="2500" rental3="900" extra1="11" extra2="100" driver="300" carImages="/images/carImages/swift2.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Dzire"/>,
   },
+  {
+    path: "/rentalPage/hondaCity",
+    element: <RentalDetailPage name1="Honda City" name2="Honda City"  capacity="4 + 1"  rental1="3000" rental2="4000" rental3="1800" extra1="18" extra2="200" driver="400" carImages="/images/carImages/honda2.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Honda%20City"/>,
+  },
+  {
+    path: "/rentalPage/vernaFacelift",
+    element: <RentalDetailPage name1="Verna Facelift" name2="Verna"  capacity="4 + 1"  rental1="3000" rental2="4000" rental3="1800" extra1="18" extra2="200" driver="400" carImages="/images/carImages/verna3.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Verna%20Facelift"/>,
+  },
 
 
   //tempo routes
