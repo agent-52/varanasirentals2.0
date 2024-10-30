@@ -140,12 +140,12 @@ function App() {
             </div>
         ): name === "premium" ?(
             <div className='cardArray gap2 pi1'>
-              <PremiumCard name="Mercedes Gls" image="/images/carImages/gls2.jpg" />
-              <PremiumCard name="Mercedes S Class" image="/images/carImages/sclass2.jpg" />
-              <PremiumCard name="Mercedes E Class" image="/images/carImages/eclass1.webp" />
-              <PremiumCard name="Bmw X7" image="/images/carImages/x7_1.webp" />
-              <PremiumCard name="Bmw 5 Series" image="/images/carImages/series5_1.jpg" />
-              <PremiumCard name="Bmw 3 Series" image="/images/carImages/3series_1.jpg" />
+              <PremiumCard name="Mercedes Gls" image="/images/carImages/gls2.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Mercedes%20Gls"/>
+              <PremiumCard name="Mercedes S Class" image="/images/carImages/sclass2.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Mercedes%20S%20Class"/>
+              <PremiumCard name="Mercedes E Class" image="/images/carImages/eclass1.webp"whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Mercedes%20E%20Class" />
+              <PremiumCard name="Bmw X7" image="/images/carImages/x7_1.webp" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Bmw%20X7"/>
+              <PremiumCard name="Bmw 5 Series" image="/images/carImages/series5_1.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Bmw%205%20Series"/>
+              <PremiumCard name="Bmw 3 Series" image="/images/carImages/3series_1.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Bmw%203%20Series"/>
               
             </div>
         ): (
