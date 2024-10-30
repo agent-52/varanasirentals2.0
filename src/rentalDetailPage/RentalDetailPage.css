@@ -24,3 +24,15 @@ select{
     margin-bottom: 4rem;
     
 }
+@media (max-width:650px) {
+    #mainSection{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    #package{
+        font-size: 1.1rem;
+    }
+  
+   
+  }

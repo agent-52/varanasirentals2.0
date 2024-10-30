@@ -33,7 +33,7 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
         <div className="font-sans"> 
             <Header />
             <main className="pi1 pb1_5 " id="mainSection">
-                <div className="gap1_5 flexC">
+                <div className="gap1_5 flexC ">
                     <div>
                         <div className='rental text-sm font-medium1 noWrap'>{name2}</div>
                         <h1 className='text-medium font-medium'> {name1}</h1>
@@ -45,7 +45,7 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
                     </div>
                     <div className="flexC gap1">
                         <h3 className="text-sm1 font-medium">Choose Vehicle</h3>
-                        <select name="package" id="package" className="text-medium1" onChange={updatePackagePrice} autoFocus>
+                        <select name="package" id="package" className="text-medium1" onChange={updatePackagePrice} autoFocus >
                             <option value="package1" >Tempo Traveller (10-16 Seat)</option>
                             <option value="package2">Urbania</option>
                             
@@ -57,7 +57,7 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
                             <h3 className="text-medium1_0 font-medium">Price</h3>
                             <div className="text-medium1 text-pink font-medium1">₹{packagePrice}</div>
                         </div>
-                        <div className="flex gap2 wrap">
+                        <div className="flex gap2">
                             <div className="flexC gap0">
                                 <div className="text-sm1">Allowed Distance</div>
                                 <div className="text-medium1_0 font-medium">{distance} Km (Roundtrip)</div>

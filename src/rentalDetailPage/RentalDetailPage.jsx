@@ -61,7 +61,7 @@ const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1,
                             <h3 className="text-medium1_0 font-medium">Rental</h3>
                             <div className="text-medium1 text-pink font-medium1">₹{packagePrice}</div>
                         </div>
-                        <div className="flex gap2 wrap">
+                        <div className="flex gap2">
                             <div className="flexC gap0">
                                 <div className="text-sm1">Extra Per/KM</div>
                                 <div className="text-medium1_0 font-medium">₹{extra1}</div>
