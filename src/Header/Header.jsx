@@ -65,7 +65,7 @@ const Header = () =>
         {/* <Link to="/contactDetails" className="textDecNone"><div className="font-medium1 text-sm1">Contact us</div></Link> */}
         <Link className="textDecNone" to="/">
         <div className="flex alignC gap00">
-          <div className="imgBox"><img src={call} alt="varanasi rentals logo" /></div>
+          <div className="imgBox"><img src={call} alt="varanasi taxi rental logo" /></div>
           
           <div className="flexC">
             <h1 className="text-sm noWrap" >need help ? </h1>

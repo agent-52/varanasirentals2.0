@@ -46,7 +46,8 @@ function App() {
   return (
     <>
     <div className='font-sans body relative'>
-    <div className="botIconContainer" onClick={updateBotVisibility}><div className="botIcon"><img src="/images/logos/chatbot-icon.png" alt="" /></div></div>
+    <div className="botIconContainer" onClick={updateBotVisibility}><div className="botIcon"><img src="/images/logos/chatbot-icon.png" alt="bot icon of varansi taxi rentals" /></div></div>
+    <a href="https://wa.me/919250028001?text=Hi" target='_blank'><div className="whatsappContainer"><div className="whatsapp"><img src="/images/logos/whatsapp.png" alt="whatsapp icon to chat with varanasi taxi rental" /></div></div></a>
     <div className='bot hidden' >
       <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
     </div>

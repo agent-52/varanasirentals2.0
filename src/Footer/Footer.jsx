@@ -15,15 +15,19 @@ const Footer = () =>{
                 <div className="flexC gap0">
                 <div className="flex gap0">
                     <div className="imgBox3"><img src={phoneIcon} alt="phone icon of varanasi taxi rental" /></div>
-                    <div className="text-sm1">+91 7355657613</div>
+                    <a className="textDecNone" href="tel:9250028001"><div className="text-sm1">+91 9250028001                    </div></a>
+                </div>
+                <div className="flex gap0">
+                    <div className="imgBox3"><img src={phoneIcon} alt="phone icon of varanasi taxi rental" /></div>
+                    <a className="textDecNone" href="tel:9335359900"><div className="text-sm1">+91 9335359900</div></a>
                 </div>
                 <div className="flex gap0">
                     <div className="imgBox3"><img src={mailIcon} alt="mail icon of varanasi taxi rentals" /></div>
-                    <div className="text-sm1">arsingh484@gmail.com</div>
+                    <div className="text-sm1">varanasirentaltaxi@gmail.com</div>
                 </div>
                 
                 </div>
-                <button className="text-sm1 font-medium">Chat Now</button>
+                <a href="https://wa.me/919250028001?text=Hi" className="textDecNone" target="_blank"><button className="text-sm1 font-medium">Chat Now</button></a>
             </div>
             <div className="grid gap1">
                 <h1 className="text-medium2">Address</h1>
@@ -44,7 +48,7 @@ const Footer = () =>{
                 <div className="flex gap1 justify-center">
                 <a href="" className="textDecNone "><div className="imgBox3"><img src={instaIcon} alt="instagram icon with the link of varanasi taxi rental" /></div></a>
                 <a href="" className="textDecNone "><div className="imgBox3"><img src={ytIcon} alt="youtube icon with the link of varanasi taxi rental" /></div></a>
-                <a href="" className="textDecNone "><div className="imgBox3"><img src={whatsappIcon} alt="whatsapp icon with the link of varanasi taxi rental" /></div></a>
+                <a href="https://wa.me/919250028001?text=Hi" className="textDecNone "><div className="imgBox3"><img src={whatsappIcon} alt="whatsapp icon with the link of varanasi taxi rental" /></div></a>
                 </div>
             </div>
         </div>

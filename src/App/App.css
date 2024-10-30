@@ -597,7 +597,41 @@
   place-items: center;
   padding: 1rem;
 }
+.whatsapp{
+  
+ width: 30px;
+  
+  background-color: white;
+  z-index: 10000000000000000000000000;
+}
 
+
+.whatsappContainer{
+  border-radius: 0.5rem;
+  display: grid;
+  background-color: white;
+  place-items: center;
+  padding: 0.7rem;
+  z-index: 10000000000000000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  bottom: 1.5%;
+  right: 5.5%;
+  width: min-content;
+  position: fixed;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border: 2px solid #FF2C38;
+}
+.whatsappContainer:hover{
+  background-color: rgba(255, 255, 255, 0.859);
+  transform: scale(1.1);
+}
+.whatsapp>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 
 
 
