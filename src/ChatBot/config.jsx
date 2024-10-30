@@ -66,6 +66,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Innova%20Crysta%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Innova%20Crysta",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Innova%20Crysta",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -75,6 +76,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Fortuner%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Fortuner",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Fortuner",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -84,6 +86,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Hycross%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Hycross",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Hycross",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -93,6 +96,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Ertiga%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Ertiga",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Ertiga",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -102,6 +106,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Kia%20Carens%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Kia%20Carens",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Kia%20Carens",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -111,6 +116,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20Dzire%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Dzire",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Dzire",
+        link4:"tel:9250028001"
       }
     },
 
@@ -123,6 +129,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20a%2010%20seater%20Tempo%20traveller%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2010%20seater%20Tempo%20traveller",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2010%20seater%20Tempo%20traveller",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -132,6 +139,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20a%2017%20seater%20Tempo%20traveller%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2017%20seater%20Tempo%20traveller",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2017%20seater%20Tempo%20traveller",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -141,6 +149,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20a%2021%20seater%20Tempo%20traveller%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2021%20seater%20Tempo%20traveller",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2021%20seater%20Tempo%20traveller",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -150,6 +159,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20urbania%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20urbania",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20urbania",
+        link4:"tel:9250028001"
       }
     },
     {
@@ -159,6 +169,7 @@ const config = {
         link1:"https://wa.me/919250028001?text=Hi%20I%20want%20maharaja%20on%20rent%20for%20Airport%20Pick/Drop",
         link2:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20maharaja",
         link3:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20maharaja",
+        link4:"tel:9250028001"
       }
     },
 

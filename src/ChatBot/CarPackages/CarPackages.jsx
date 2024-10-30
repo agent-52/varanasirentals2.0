@@ -18,6 +18,11 @@ const CarPackages = (props) =>{
             link:props.link3,
             id:3,
         },
+        {
+            text:"Call us",
+            link:props.link4,
+            id:4
+        }
     ]
 
     const buttonArray = options.map((option, index) => (
@@ -40,6 +45,11 @@ const TempoPackages = (props) =>{
             link:props.link2,
             id:2,
         },
+        {
+            text:"Call us",
+            link:props.link4,
+            id:4, 
+        }
         
     ]
 

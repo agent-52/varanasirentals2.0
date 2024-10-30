@@ -21,27 +21,27 @@ const routes = [
 
   {
     path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crysta1.webp"/>,
+    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crysta1.webp" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Innova%20Crysta"/>,
   },
   {
     path: "/rentalPage/Fortuner",
-    element: <RentalDetailPage name1="Fortuner" name2="Fortuner"  capacity="6 + 1"  rental1="8000" rental2="10500" rental3="5000" extra1="45" extra2="500" driver="500" carImages="/images/carImages/fortuner1.jpg"/>,
+    element: <RentalDetailPage name1="Fortuner" name2="Fortuner"  capacity="6 + 1"  rental1="8000" rental2="10500" rental3="5000" extra1="45" extra2="500" driver="500" carImages="/images/carImages/fortuner1.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Fortuner"/>,
   },
   {
     path: "/rentalPage/Hycross",
-    element: <RentalDetailPage name1="Hycross" name2="Hycross"  capacity="6 + 1"  rental1="4500" rental2="6000" rental3="2200" extra1="22" extra2="250" driver="400" carImages="/images/carImages/hycross4.webp"/>,
+    element: <RentalDetailPage name1="Hycross" name2="Hycross"  capacity="6 + 1"  rental1="4500" rental2="6000" rental3="2200" extra1="22" extra2="250" driver="400" carImages="/images/carImages/hycross4.webp" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Hycross"/>,
   },
   {
     path: "/rentalPage/Ertiga",
-    element: <RentalDetailPage name1="Ertiga" name2="Ertiga"  capacity="6 + 1"  rental1="2500" rental2="3000" rental3="1150" extra1="14" extra2="150" driver="300" carImages="/images/carImages/ertiga1.webp"/>,
+    element: <RentalDetailPage name1="Ertiga" name2="Ertiga"  capacity="6 + 1"  rental1="2500" rental2="3000" rental3="1150" extra1="14" extra2="150" driver="300" carImages="/images/carImages/ertiga1.webp" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Ertiga"/>,
   },
   {
     path: "/rentalPage/Kia",
-    element: <RentalDetailPage name1=" Kia Carens " name2=" Kia Carens "  capacity="6 + 1"  rental1="2500" rental2="3000" rental3="1150" extra1="14" extra2="150" driver="300" carImages="/images/carImages/kia1.webp"/>,
+    element: <RentalDetailPage name1=" Kia Carens " name2=" Kia Carens "  capacity="6 + 1"  rental1="2500" rental2="3000" rental3="1150" extra1="14" extra2="150" driver="300" carImages="/images/carImages/kia1.webp" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Kia%20Carens"/>,
   },
   {
     path: "/rentalPage/Swift",
-    element: <RentalDetailPage name1="Swift Dzire" name2="Swift Dzire"  capacity="4 + 1"  rental1="2000" rental2="2500" rental3="900" extra1="11" extra2="100" driver="300" carImages="/images/carImages/swift2.jpg"/>,
+    element: <RentalDetailPage name1="Swift Dzire" name2="Swift Dzire"  capacity="4 + 1"  rental1="2000" rental2="2500" rental3="900" extra1="11" extra2="100" driver="300" carImages="/images/carImages/swift2.jpg" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20Dzire"/>,
   },
 
 
@@ -51,23 +51,23 @@ const routes = [
 
   {
     path: "/rentalPage/10-16SeaterTempo",
-    element: <RentalDetailPage name1="Tempo Traveller" name2="10 - 16 Seater"  capacity="10 - 16"  rental1="5500" rental3="2500" extra1="25" driver="500" carImages="/images/carImages/tempo3.png" optionArray={optionArray2} version="2"/>,
+    element: <RentalDetailPage name1="Tempo Traveller" name2="10 - 16 Seater"  capacity="10 - 16"  rental1="5500" rental3="2500" extra1="25" driver="500" carImages="/images/carImages/tempo3.png" optionArray={optionArray2} version="2" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2010%20seater%20Tempo%20traveller"/>,
   },
   {
     path: "/rentalPage/17-20SeaterTempo",
-    element: <RentalDetailPage name1="Tempo Traveller" name2="17 - 20 Seater"  capacity="17 - 20"  rental1="6500" rental3="3000" extra1="28"  driver="500" carImages="/images/carImages/tempo4.png" optionArray={optionArray2} version="2"/>,
+    element: <RentalDetailPage name1="Tempo Traveller" name2="17 - 20 Seater"  capacity="17 - 20"  rental1="6500" rental3="3000" extra1="28"  driver="500" carImages="/images/carImages/tempo4.png" optionArray={optionArray2} version="2" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2017%20seater%20Tempo%20traveller"/>,
   },
   {
     path: "/rentalPage/21-25SeaterTempo",
-    element: <RentalDetailPage name1="Tempo Traveller" name2="21 - 25 Seater"  capacity="21 - 25"  rental1="7500" rental3="3500" extra1="35"  driver="500" carImages="/images/carImages/tempo2.png" optionArray={optionArray2} version="2"/>,
+    element: <RentalDetailPage name1="Tempo Traveller" name2="21 - 25 Seater"  capacity="21 - 25"  rental1="7500" rental3="3500" extra1="35"  driver="500" carImages="/images/carImages/tempo2.png" optionArray={optionArray2} version="2" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%2021%20seater%20Tempo%20traveller"/>,
   },
   {
     path: "/rentalPage/TempoMaharaja",
-    element: <RentalDetailPage name1="Tempo Maharaja" name2="9 - 14 Seater"  capacity="9 - 14"  rental1="7500" rental3="3500" extra1="28"  driver="500" carImages="/images/carImages/tempo8.jpg" optionArray={optionArray2} version="2"/>,
+    element: <RentalDetailPage name1="Tempo Maharaja" name2="9 - 14 Seater"  capacity="9 - 14"  rental1="7500" rental3="3500" extra1="28"  driver="500" carImages="/images/carImages/tempo8.jpg" optionArray={optionArray2} version="2" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20maharaja"/>,
   },
   {
     path: "/rentalPage/Urbania",
-    element: <RentalDetailPage name1="Urbania" name2="9 - 16 Seater"  capacity="9 - 16"  rental1="6500" rental3="3000" extra1="30"  driver="500" carImages="/images/carImages/urbania.jpg" optionArray={optionArray2} version="2"/>,
+    element: <RentalDetailPage name1="Urbania" name2="9 - 16 Seater"  capacity="9 - 16"  rental1="6500" rental3="3000" extra1="30"  driver="500" carImages="/images/carImages/urbania.jpg" optionArray={optionArray2} version="2" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20urbania"/>,
   },
   
 

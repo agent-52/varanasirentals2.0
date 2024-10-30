@@ -13,7 +13,7 @@ import gps from "/images/logos/gps.png"
 import water from "/images/logos/water.png"
 
 
-const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1, rental2, rental3 , extra1, extra2, driver, optionArray=[{text:"Standard - 8hr 80Km",value:"package1"}, {text:"Premium - 12hr 120Km", value:"package2"},{text:"Airport Pick/Drop", value:"airport"} ], version}) =>{
+const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1, rental2, rental3 , extra1, extra2, driver, optionArray=[{text:"Standard - 8hr 80Km",value:"package1"}, {text:"Premium - 12hr 120Km", value:"package2"},{text:"Airport Pick/Drop", value:"airport"} ], version, whatsappLink}) =>{
     const [packagePrice, setPackagePrice ]= useState(rental1)
     function updatePackagePrice(e){
         const selectedOption = e.target.value
@@ -85,7 +85,7 @@ const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1,
                             </div>
                             
                         </div>
-                        <button className="bookButton2 text-sm1">Book Now </button>
+                        <a className="textDecNone" href={whatsappLink} target="_blank" rel="noopener noreferrer"><button className="bookButton2 text-sm1">Book Now </button></a>
                     </div>
 
                 </div>

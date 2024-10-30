@@ -85,39 +85,39 @@ const PremiumButtons = (props) =>{
     const options = [
         {
             text:"Mercedes Gls",
-            handler: props.actionProvider.handleMGls,
+            link:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Mercedes%20Gls",
             id:1,
         },
         {
             text:"Mercedes S Class",
-            handler: props.actionProvider.handleMS,
+            link:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Mercedes%20S%20Class",
             id:2,
         },
         {
             text:"Mercedes E Class",
-            handler: props.actionProvider.handleMe,
+            link:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Mercedes%20E%20Class",
             id:3,
         },
         {
             text:"Bmw X7",
-            handler: props.actionProvider.handleBmwX7,
+            link:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Bmw%20X7",
             id:4,
         },
         {
             text:"Bmw 5 Series",
-            handler: props.actionProvider.handleBmw5,
+            link:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Bmw%205%20Series",
             id:5,
         },
         {
             text:"Bmw 3 Series",
-            handler: props.actionProvider.handleBmw3,
-            id:5,
+            link:"https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20making%20reservations%20for%20Bmw%203%20Series",
+            id:6,
         },
         
     ]
 
     const buttonMarkup = options.map((option) => (
-        <button key={option.id} onClick={option.handler} className="option-button">{option.text}</button>
+        <a href={option.link}><button key={option.id} onClick={option.handler} className="option-button">{option.text}</button></a>
     ))
 
     return <div className="options-container">{buttonMarkup}</div>
