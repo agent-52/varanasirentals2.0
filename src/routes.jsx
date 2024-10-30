@@ -5,6 +5,7 @@ import RentalDetailPage from "./rentalDetailPage/RentalDetailPage";
 import TravelDetailPage from "./travelDetailPage/TravelDetailPage";
 
 const optionArray2 = [{text:"Standard - 8hr 80Km",value:"package1"},{text:"Airport Pick/Drop", value:"airport"}]
+const optionArray3 = [{text:"Standard - 1Day 300Km",value:"package1"}]
 const routes = [
   {
     path: "/",
@@ -50,81 +51,46 @@ const routes = [
 
   {
     path: "/rentalPage/10-16SeaterTempo",
-    element: <RentalDetailPage name1="Tempo Traveller" name2="10 - 16 Seater"  capacity="10 - 16"  rental1="5500" rental3="2500" extra1="25" driver="500" carImages="/images/carImages/tempo3.png" optionArray={optionArray2}/>,
+    element: <RentalDetailPage name1="Tempo Traveller" name2="10 - 16 Seater"  capacity="10 - 16"  rental1="5500" rental3="2500" extra1="25" driver="500" carImages="/images/carImages/tempo3.png" optionArray={optionArray2} version="2"/>,
   },
   {
     path: "/rentalPage/17-20SeaterTempo",
-    element: <RentalDetailPage name1="Tempo Traveller" name2="17 - 20 Seater"  capacity="17 - 20"  rental1="6500" rental3="3000" extra1="28"  driver="500" carImages="/images/carImages/tempo4.png" optionArray={optionArray2}/>,
+    element: <RentalDetailPage name1="Tempo Traveller" name2="17 - 20 Seater"  capacity="17 - 20"  rental1="6500" rental3="3000" extra1="28"  driver="500" carImages="/images/carImages/tempo4.png" optionArray={optionArray2} version="2"/>,
   },
   {
     path: "/rentalPage/21-25SeaterTempo",
-    element: <RentalDetailPage name1="Tempo Traveller" name2="21 - 25 Seater"  capacity="21 - 25"  rental1="7500" rental3="3500" extra1="35"  driver="500" carImages="/images/carImages/tempo2.png" optionArray={optionArray2}/>,
+    element: <RentalDetailPage name1="Tempo Traveller" name2="21 - 25 Seater"  capacity="21 - 25"  rental1="7500" rental3="3500" extra1="35"  driver="500" carImages="/images/carImages/tempo2.png" optionArray={optionArray2} version="2"/>,
   },
   {
     path: "/rentalPage/TempoMaharaja",
-    element: <RentalDetailPage name1="Tempo Maharaja" name2="9 - 14 Seater"  capacity="9 - 14"  rental1="7500" rental3="3500" extra1="28"  driver="500" carImages="/images/carImages/tempo8.jpg" optionArray={optionArray2}/>,
+    element: <RentalDetailPage name1="Tempo Maharaja" name2="9 - 14 Seater"  capacity="9 - 14"  rental1="7500" rental3="3500" extra1="28"  driver="500" carImages="/images/carImages/tempo8.jpg" optionArray={optionArray2} version="2"/>,
   },
   {
     path: "/rentalPage/Urbania",
-    element: <RentalDetailPage name1="Urbania" name2="9 - 16 Seater"  capacity="9 - 16"  rental1="6500" rental3="3000" extra1="30"  driver="500" carImages="/images/carImages/urbania.jpg" optionArray={optionArray2}/>,
+    element: <RentalDetailPage name1="Urbania" name2="9 - 16 Seater"  capacity="9 - 16"  rental1="6500" rental3="3000" extra1="30"  driver="500" carImages="/images/carImages/urbania.jpg" optionArray={optionArray2} version="2"/>,
   },
   
+
+  //buses routes
   {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
+    path: "/rentalPage/MiniBus",
+    element: <RentalDetailPage name1="Mini Bus" name2="30-35 Seater"  capacity="30 - 35"  rental1="9500" extra1="50" version="2" driver="1500" carImages="/images/carImages/bus4.jpg" optionArray={optionArray3}/>,
   },
   {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
+    path: "/rentalPage/40SeaterBus",
+    element: <RentalDetailPage name1="Bus" name2="40 Seater"  capacity="40"  rental1="11000" extra1="55" version="2" driver="1500" carImages="/images/carImages/bus3.png" optionArray={optionArray3}/>,
   },
   {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
+    path: "/rentalPage/45SeaterBus",
+    element: <RentalDetailPage name1="Bus" name2="45 Seater"  capacity="45"  rental1="12500" extra1="60" version="2" driver="1500" carImages="/images/carImages/bus5.jpg" optionArray={optionArray3}/>,
   },
   {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
+    path: "/rentalPage/49SeaterBus",
+    element: <RentalDetailPage name1=" Bus" name2="49 Seater"  capacity="49"  rental1="14500" extra1="65" version="2" driver="1500" carImages="/images/carImages/bus6.jpg" optionArray={optionArray3}/>,
   },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
-  {
-    path: "/rentalPage/Crysta",
-    element: <RentalDetailPage name1="Innova Crysta" name2="Innova Crysta"  capacity="6 + 1"  rental1="3000" rental2="4000" rental3="1500" extra1="18" extra2="250" driver="300" carImages="/images/carImages/crystaWall.jpg"/>,
-  },
+
+
+  
   
 
   //tour routes

@@ -133,10 +133,10 @@ function App() {
           </div>
         ): name === "buses" ?(
             <div className='cardArray gap2 pi1'>
-              <BusCard name='Mini Bus' rate1="9500" rate3="50" driverRate="1500" capacity="30-35" image="/images/carImages/bus4.jpg"/>
-              <BusCard name=' Bus (40 Seater)' rate1="11000" rate3="55" driverRate="1500" capacity="40" image="/images/carImages/bus3.png"/>
-              <BusCard name=' Bus (45 Seater)' rate1="12500" rate3="60" driverRate="1500" capacity="45" image="/images/carImages/bus5.jpg"/>
-              <BusCard name=' Bus (49 Seater)' rate1="14500" rate3="65" driverRate="1500" capacity="49" image="/images/carImages/bus6.jpg"/>
+              <BusCard name='Mini Bus' rate1="9500" rate3="50" driverRate="1500" capacity="30-35" image="/images/carImages/bus4.jpg" routeLink='/rentalPage/MiniBus'/>
+              <BusCard name=' Bus (40 Seater)' rate1="11000" rate3="55" driverRate="1500" capacity="40" image="/images/carImages/bus3.png" routeLink='/rentalPage/40SeaterBus'/>
+              <BusCard name=' Bus (45 Seater)' rate1="12500" rate3="60" driverRate="1500" capacity="45" image="/images/carImages/bus5.jpg" routeLink='/rentalPage/45SeaterBus'/>
+              <BusCard name=' Bus (49 Seater)' rate1="14500" rate3="65" driverRate="1500" capacity="49" image="/images/carImages/bus6.jpg" routeLink='/rentalPage/49SeaterBus'/>
             </div>
         ): name === "premium" ?(
             <div className='cardArray gap2 pi1'>

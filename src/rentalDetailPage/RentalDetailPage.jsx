@@ -2,7 +2,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./RentalDetailPage.css";
 import Slider from "../Slider/Slider";
-import { useEffect } from "react";
+import { useEffect, version } from "react";
 import { useState } from "react";
 
 import ice from "/images/logos/ice.png"
@@ -13,7 +13,7 @@ import gps from "/images/logos/gps.png"
 import water from "/images/logos/water.png"
 
 
-const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1, rental2, rental3 , extra1, extra2, driver, optionArray=[{text:"Standard - 8hr 80Km",value:"package1"}, {text:"Premium - 12hr 120Km", value:"package2"},{text:"Airport Pick/Drop", value:"airport"} ]}) =>{
+const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1, rental2, rental3 , extra1, extra2, driver, optionArray=[{text:"Standard - 8hr 80Km",value:"package1"}, {text:"Premium - 12hr 120Km", value:"package2"},{text:"Airport Pick/Drop", value:"airport"} ], version}) =>{
     const [packagePrice, setPackagePrice ]= useState(rental1)
     function updatePackagePrice(e){
         const selectedOption = e.target.value
@@ -66,10 +66,19 @@ const RentalDetailPage = ({name1, name2, carImages, capacity, fuelType, rental1,
                                 <div className="text-sm1">Extra Per/KM</div>
                                 <div className="text-medium1_0 font-medium">₹{extra1}</div>
                             </div>
-                            <div className="flexC gap0">
-                                <div className="text-sm1">Extra Per/Hour</div>
-                                <div className="text-medium1_0 font-medium">₹{extra2}</div>
-                            </div>
+                            
+                            {version == "2" ? (
+                                <div className="flexC gap0">
+                                    <div className="text-sm1">Capacity</div>
+                                    <div className="text-medium1_0 font-medium">{capacity}</div>
+                                </div>
+                            ):(
+                                <div className="flexC gap0">
+                                    <div className="text-sm1">Extra Per/Hour</div>
+                                    <div className="text-medium1_0 font-medium">₹{extra2}</div>
+                                </div>
+                            )}
+                            
                             <div className="flexC gap0">
                                 <div className="text-sm1">Driver Charge</div>
                                 <div className="text-medium1_0 font-medium">₹{driver}</div>
