@@ -12,7 +12,7 @@ import { useState } from "react";
 import gps from "/images/logos/gps.png"
 
 
-const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, extra1, extra2="30", distance, place1, place2, place4, place5, place3, days="1 Day", whatsappLink}) =>{
+const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2,rental3, rental4, rental5, rental6, rental7, rental8, rental9,rental10, rental11, rental12, rental13, extra1, extra2="30", extra3, extra4, extra5, extra6, extra7, extra8, extra9, extra10, extra11, extra12, extra13, distance, place1, place2, place4, place5, place3, days="1 Day", whatsappLink}) =>{
     const [packagePrice, setPackagePrice ]= useState(rental1)
     const [extraPrice, setExtraPrice ]= useState(extra1)
     function updatePackagePrice(e){
@@ -25,7 +25,52 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
             setPackagePrice(rental2)
             setExtraPrice(extra2)
             console.log("changed")
+        }else if (selectedOption == "package3") {
+            setPackagePrice(rental3)
+            setExtraPrice(extra3)
+            console.log("changed")
+        }else if (selectedOption == "package4") {
+            setPackagePrice(rental4)
+            setExtraPrice(extra4)
+            console.log("changed")
+        }else if (selectedOption == "package5") {
+            setPackagePrice(rental5)
+            setExtraPrice(extra5)
+            console.log("changed")
+        }else if (selectedOption == "package6") {
+            setPackagePrice(rental6)
+            setExtraPrice(extra6)
+            console.log("changed")
+        }else if (selectedOption == "package7") {
+            setPackagePrice(rental7)
+            setExtraPrice(extra7)
+            console.log("changed")
+        }else if (selectedOption == "package8") {
+            setPackagePrice(rental8)
+            setExtraPrice(extra8)
+            console.log("changed")
+        }else if (selectedOption == "package9") {
+            setPackagePrice(rental9)
+            setExtraPrice(extra9)
+            console.log("changed")
+        }else if (selectedOption == "package10") {
+            setPackagePrice(rental10)
+            setExtraPrice(extra10)
+            console.log("changed")
+        }else if (selectedOption == "package11") {
+            setPackagePrice(rental11)
+            setExtraPrice(extra11)
+            console.log("changed")
+        }else if (selectedOption == "package12") {
+            setPackagePrice(rental12)
+            setExtraPrice(extra12)
+            console.log("changed")
+        }else if (selectedOption == "package13") {
+            setPackagePrice(rental13)
+            setExtraPrice(extra13)
+            console.log("changed")
         }
+    
     }
 
     return(
@@ -48,6 +93,17 @@ const TravelDetailPage = ({name1, name2,desc, travelImages, rental1, rental2, ex
                         <select name="package" id="package" className="text-medium1" onChange={updatePackagePrice} autoFocus >
                             <option value="package1" >Tempo Traveller (10-16 Seat)</option>
                             <option value="package2">Urbania</option>
+                            <option value="package3">Tempo Traveller (9-14 Seat)</option>
+                            <option value="package4">Tempo Traveller (17-20 Seat)</option>
+                            <option value="package5">Tempo Traveller (21-25 Seat)</option>
+                            <option value="package6">Innova Crysta</option>
+                            <option value="package7">Hycross</option>
+                            <option value="package8">Ertiga</option>
+                            <option value="package9">Kia Carens</option>
+                            <option value="package10">Fortuner</option>
+                            <option value="package11">Dzire</option>
+                            <option value="package12">Honda City</option>
+                            <option value="package13">Verna</option>
                             
                         </select>
                     </div>
