@@ -41,7 +41,7 @@ const Header = () =>
         <div className="flex alignC gap00">
           <div className="imgBox1"><img src={logo} alt="varanasi rentals logo" /></div>
           
-          <h1 className="text-medium2 noWrap" >Varanasi Taxi<span className="text-pink">Rentals</span></h1>
+          <h1 className="text-medium2 noWrap" >Varanasi Taxi <span className="text-pink">Rentals</span></h1>
         </div>
         
       </Link>
@@ -87,7 +87,7 @@ const Header = () =>
       <Link className="textDecNone" to="/">
         <div className="flex gap00 alignC">
           <div className="imgBox1"><img src={logo} alt="varanasi rentals logo" /></div>
-          <h1 className="text-medium1">Varanasi Taxi<span className="text-pink">Rentals</span></h1>
+          <h1 className="text-medium1">Varanasi Taxi <span className="text-pink">Rentals</span></h1>
         </div>
       </Link>
       <div className="navMobile" onClick={updateNavVisibilty}>
