@@ -13,7 +13,7 @@ const TourArray = ({}) =>{
 
             <TourCard name="Varanasi -> Ayodhya"  image="/images/tour/ramJanamBhoomi.jpg" routeLink="/tours/varanasi-Ayodhya" desc="A compact travell package from Varanasi to Ayodhya designed to cover all the prominent sights between Varanasi and Ayodhya like Saryu River,  Hanuman Garhi Temple, Ram Lala Temple, Sita Rasoi,  Dasrath Mahal,  Kanak Bhavan and back to Varanasi. 
 
-            " price1="14,500" distance="450" placesCovered=" Saryu River,  Hanuman Garhi Temple, Ram Lala Temple, Sita Rasoi, Dasrath Mahal, Kanak Bhavan "/>
+            " price1="13,500" distance="450" placesCovered=" Saryu River,  Hanuman Garhi Temple, Ram Lala Temple, Sita Rasoi, Dasrath Mahal, Kanak Bhavan "/>
 
             <TourCard name="Varanasi -> Prayagraj -> Ayodhya" image="/images/tour/saryuRiver.jpg" routeLink="/tours/varanasi-Prayagraj-Ayodhya1" desc="A 1 day trip from Varanasi to Prayagraj to Ayodhya where you will visit  Triveni Sangam and visit Temples nearby on day1 then  Saryu River,  Shri Ram Lala Temple, Hanuman Garhi Temple, Sita Rasoi, Dasrath Mahal, Kanak Bhavan and back to Varanasi. " days="1 day" price1="15,000" distance="550" placesCovered="Triveni Sangam, Saryu River,  Hanuman Garhi Temple, Ram Lala Temple, Sita Rasoi, Dasrath Mahal, Kanak Bhavan"/>
 
