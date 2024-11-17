@@ -11,7 +11,7 @@ const config = {
 
   initialMessages: [
     
-    createChatBotMessage("Welcome to Varansi taxi rentals"),
+    createChatBotMessage("Welcome to Varanasi taxi rentals"),
     createChatBotMessage(`What can we help you with ?`,{
       widget: "options"
     } ),
