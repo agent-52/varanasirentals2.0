@@ -115,7 +115,7 @@ function App() {
           <div className='cardArray gap2 pi1' >
             
             <CarCard name="Innova Crysta" airportRate="1500" rate1="3000" rate2="4000" rate3="18" capacity="6 + 1" driverRate="300" rentName="Crysta" carImage="/images/carImages/crysta1.webp" routeLink='/rentalPage/Crysta' />
-            <CarCard name='Fortuner' airportRate="5000" rate1="8000" rate2="10500" rate3="45" capacity="6 + 1" driverRate="400" rentName="Fortuner" carImage="/images/carImages/fortuner1.jpg" routeLink='/rentalPage/Fortuner' />
+            <CarCard name='Fortuner' airportRate="5000" rate1="8000" rate2="10500" rate3="45" capacity="6 + 1" driverRate="500" rentName="Fortuner" carImage="/images/carImages/fortuner1.jpg" routeLink='/rentalPage/Fortuner' />
             <CarCard name='Hycross' airportRate="2200" rate1="4500" rate2="6000" rate3="22" capacity="6 + 1" driverRate="400" rentName="Hycross" carImage="/images/carImages/hycross4.webp" routeLink='/rentalPage/Hycross' />
             <CarCard name='Ertiga' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Ertiga" carImage="/images/carImages/ertiga1.webp" routeLink='/rentalPage/Ertiga' />
             <CarCard name='Kia Carens' airportRate="1150" rate1="2500" rate2="3000" rate3="14" capacity="6 + 1" driverRate="300" rentName="Kia" carImage="/images/carImages/kia1.webp" routeLink='/rentalPage/Kia' />
@@ -129,9 +129,9 @@ function App() {
           <div className='cardArray gap2 pi1' id='tempos'>
             <TempoCard name='Tempo Traveller' airportRate="2500" rate1="5500"  rate3="25" capacity="10 - 16" driverRate="500" image="/images/carImages/17seater.jpg" routeLink='/rentalPage/10-16SeaterTempo'/>
             <TempoCard name='Tempo Traveller' airportRate="3000" rate1="6500" rate3="28" capacity="17 - 20" driverRate="500" image="/images/carImages/tempo1.png" routeLink='/rentalPage/17-20SeaterTempo'/>
-            <TempoCard name='Tempo Traveller' airportRate="1150" rate1="7500"  rate3="35" capacity="21 - 25" driverRate="500" image="/images/carImages/tempo4.png" routeLink='/rentalPage/21-25SeaterTempo'/>
+            <TempoCard name='Tempo Traveller' airportRate="3500" rate1="7500"  rate3="35" capacity="21 - 25" driverRate="500" image="/images/carImages/tempo4.png" routeLink='/rentalPage/21-25SeaterTempo'/>
             <TempoCard name='Tempo Traveller Maharaja' airportRate="3500" rate1="7500"  rate3="28" capacity="9 - 14" driverRate="500" image="/images/carImages/tempo3.png" routeLink='/rentalPage/TempoMaharaja'/>
-            <TempoCard name='Urbania' airportRate="3000" rate1="6500"  rate3="30" capacity="9 - 16" driverRate="500" image="/images/carImages/urbania.jpg" routeLink='/rentalPage/Urbania'/>
+            <TempoCard name='Urbania' airportRate="3000" rate1="7500"  rate3="30" capacity="9 - 16" driverRate="500" image="/images/carImages/urbania.jpg" routeLink='/rentalPage/Urbania'/>
             
             
           </div>

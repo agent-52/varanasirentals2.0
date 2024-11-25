@@ -75,7 +75,7 @@ const routes = [
   },
   {
     path: "/rentalPage/Urbania",
-    element: <RentalDetailPage name1="Urbania" name2="9 - 16 Seater"  capacity="9 - 16"  rental1="6500" rental3="3000" extra1="30"  driver="500" carImages="/images/carImages/urbania.jpg" optionArray={optionArray2} version="2" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20urbania"/>,
+    element: <RentalDetailPage name1="Urbania" name2="9 - 16 Seater"  capacity="9 - 16"  rental1="7500" rental3="3000" extra1="30"  driver="500" carImages="/images/carImages/urbania.jpg" optionArray={optionArray2} version="2" whatsappLink="https://wa.me/919250028001?text=Hi%20I'm%20interested%20in%20renting%20urbania"/>,
   },
   
 
